@@ -3,7 +3,7 @@ class ReservationThread extends Thread {
     public void run() {
         try {
             for (int i = 1; i <= 5; i++) {
-                System.out.println("Ticket Reservation: " + i);
+                System.out.println("Ticket Reservation: Reserved-" + i);
                 Thread.sleep(500);
             }
         } catch (InterruptedException e) {
@@ -17,7 +17,7 @@ class StatusThread implements Runnable {
     public void run() {
         try {
             for (int i = 1; i <= 5; i++) {
-                System.out.println("Ticket Confirmation: " + i);
+                System.out.println("Ticket Confirmation: Confirmed-" + i);
                 Thread.sleep(500);
             }
         } catch (InterruptedException e) {
